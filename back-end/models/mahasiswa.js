@@ -3,6 +3,7 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
+  // model Mahasiswa untuk database tabel mahasiswa
   class Mahasiswa extends Model {
     /**
      * Helper method for defining associations.

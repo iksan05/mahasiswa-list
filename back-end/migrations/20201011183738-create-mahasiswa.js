@@ -1,6 +1,7 @@
 'use strict';
 module.exports = {
   up: async (queryInterface, Sequelize) => {
+    // migrasi tabel mahasiswa ke database
     await queryInterface.createTable('Mahasiswas', {
       id: {
         allowNull: false,

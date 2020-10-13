@@ -1,6 +1,6 @@
 const {gql} = require("apollo-server-express");
 
-
+// mendefenisikan query dan mutation untuk dipakai oleh front-end
 const typeDefs = gql`
     type Query {
         hello: String!

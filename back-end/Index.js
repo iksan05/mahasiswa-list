@@ -5,8 +5,10 @@ const typeDefs = require("./graphql/typeDefs");
 
 const app = express();
 
+// buat apollo server dengan memberikan nilai typeDefs dan resolvers
 const server = new ApolloServer({ typeDefs, resolvers });
 
+// set middleware
 server.applyMiddleware({ app });
 
 app.listen({ port: 8080 }, () => {
